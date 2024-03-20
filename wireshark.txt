@@ -1,0 +1,52 @@
+https://www.comparitech.com/net-admin/wireshark-cheat-sheet/
+https://www.hackers-arise.com/post/2018/09/27/network-forensics-part-2-detecting-and-analyzing-a-scada-dos-attack
+
+To find DOS (SYN and ACK) : tcp.flags.syn == 1  , tcp.flags.syn == 1 and tcp.flags.ack == 0
+To find passwords : http.request.method == POST
+
+Check HTTPs traffic means look for SSL/TLS traffic
+Edit -> Preferences -> name resolution -> enable IP Addr. to resolve Domain names -> Resolve network(IP) Addr.
+
+Find IP Addr.
+Statistics -> conversations -> Look inside IPv4 tab
+
+Change timestamps for pcap to match log files
+view -> select(Time display format) -> Select required format
+
+Filter packets based on keywords:
+frame contains "login"
+smtp and frame contains "MAIL FROM"
+
+
+Detect DOS/DDOS with Wireshark:
+Explanation:
+Attacker ----(syn)----> server
+Attacker <----(syn-ack)---- server
+attacker ----(ack)----> server(Normal communication)
+Note:In DOS we don't get ACK
+To find DOS (SYN and ACK) : tcp.flags.syn == 1  , tcp.flags.syn == 1 and tcp.flags.ack == 0
+
+Follow streams: Red=sending    Blue=Response
+Select packet -> right click -> follow
+
+File ->export objects -> http }search for .txt files
+ip.addr=202.133.48.30
+extension -> .pcap(packet capture)
+
+Detect IOT Traffic:
+Analysing MQTT(IOT)
+MQTT -> Message Queuing Telemetry Transport
+1)MQTT Broker -> Receives published topics
+              -> Distributes topics to subscribers
+              -> keep client connections alive
+              -> send Last Will & Testament(LWT) to subscribers if client "Ungracefully disconnected"
+2)MQTT Client -> Can publish topics,keep-alive time,retain bit,QoS,LWT
+3)Topic -> Name of data
+4)Payload -> Actual data
+5)Msg -> Topic+payload
+6)Quality of service(QoS):  
+              -> 0 = At most once -> Transmit msg once
+              -> 1 = At least once
+              -> 2 = Exactly once
+
+
