@@ -33,7 +33,7 @@ File ->export objects -> http }search for .txt files
 ip.addr=202.133.48.30
 extension -> .pcap(packet capture)
 
-Detect IOT Traffic:
+Detect IOT Traffic:mqtt 
 Analysing MQTT(IOT)
 MQTT -> Message Queuing Telemetry Transport
 1)MQTT Broker -> Receives published topics
