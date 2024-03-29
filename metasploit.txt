@@ -16,5 +16,9 @@ The meterpreter can be used to perform different actions on the machine.
 Eg: Taking SS,get live screen, view webcam and microhone access,record keystrokes,get a shell,privilege escalation
 >help
 THM Icecast Room:
-Find user running the process :-> getuid
-Find build,architecture,OS of Windows is the system :->  sysinfo
+getuid  -> Find user running the process
+sysinfo -> Find build,architecture,OS of Windows is the system
+getsystem -> Privilege Escalation
+ps > list process running on target
+migrate <pid>  //Ex:cmd.exe PID=4564
+screenshot
