@@ -32,5 +32,12 @@ Local exploits require a session to be selected (something we can verify with th
 ...We can now verify that we have expanded permissions using the command `getprivs`. What permission listed allows us to take ownership of files?
 What permission listed allows us to take ownership of files?    Answer : SeTakeOwnershipPrivilege
 
+migrate <pid> // PID of user(NT AUTHORITY\SYSTEM)
+getuid //check user
+
+Now that we’ve made our way to full administrator permissions we’ll set our sights on looting. Mimikatz is a rather infamous password dumping tool that is incredibly useful. Load it now using the command `load kiwi` (Kiwi is the updated version of Mimikatz)
+
+After 'load kiwi'  ....
+help > to look for kiwi commands....creds_all
 
 
