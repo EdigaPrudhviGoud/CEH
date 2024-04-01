@@ -37,7 +37,21 @@ getuid //check user
 
 Now that we’ve made our way to full administrator permissions we’ll set our sights on looting. Mimikatz is a rather infamous password dumping tool that is incredibly useful. Load it now using the command `load kiwi` (Kiwi is the updated version of Mimikatz)
 
-After 'load kiwi'  ....
+After 'load kiwi'  ....Work only after privilege escalation
 help > to look for kiwi commands....creds_all
+
+********************************** https://tryhackme.com/r/room/windowsfundamentals1xbx  ****************************************
+BitLocker Drive Encryption -> Windows 11 Pro(yes)---- Windows 11 Home(No)
+If your device is lost or stolen, BitLocker puts everything on lockdown, so no one else can access your systems or data.
+
+Windows based Commands which will help you to find the answers.
+1) net user — For Domain Users Enumeration
+2) snow.exe -C -p “password” stegfile.txt
+3) type C:\path.txt — It displays the content of the path.txt file.
+4) dir
+5) cd
+6) hostname
+7) whoami
+
 
 
