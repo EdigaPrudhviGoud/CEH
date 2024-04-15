@@ -43,7 +43,13 @@ For ASCII armoured output add the --armor option in the above command
 Decrypt a file using GNU Privacy Guard:
 gpg --output original_message.txt --decrypt message.gpg
 
-OpenSSL Project
+OpenSSL Project:
+Encrypt a file: openssl aes-256-cbc -e -in message.txt -out encrypted_message
+Decrypt : openssl aes-256-cbc -d -in encrypted_message -out original_message.txt
+-pbkdf2
+-iter NUMBER
+To make the encryption more secure and resilient against brute-force attacks, we can add -pbkdf2 to use the Password-Based Key Derivation Function 2 (PBKDF2); moreover, we can specify the number of iterations on the password to derive the encryption key using -iter NUMBER. To iterate 10,000 times.
+
 
 
 
