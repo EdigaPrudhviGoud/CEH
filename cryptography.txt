@@ -31,3 +31,19 @@ Caesar cipher is considered a substitution cipher because each letter in the alp
 
 We don’t really need to use the encryption key to decrypt the received ciphertext, “Uyv sxd gyi siqvw x sinduxjd pvzjdw po axffojdz xgxo wsxcc wuidvw.” As shown in the figure below, using a website such as quipqiup, it will take a moment to discover that the original text was “The man who moves a mountain begins by carrying away small stones.” This example clearly indicates that this algorithm is broken and should not be used for confidential communication.
 https://www.quipqiup.com/
+
+There are many programs available for symmetric encryption. We will focus on two, which are widely used for asymmetric encryption as well:
+GNU Privacy Guard:
+Encrypt a file -> 
+    gpg --symmetric --cipher-algo CIPHER message.txt
+O/P-> Encrypted file - message.txt.gpg
+The default output is in the binary OpenPGP format;
+For ASCII armoured output add the --armor option in the above command
+
+Decrypt a file using GNU Privacy Guard:
+gpg --output original_message.txt --decrypt message.gpg
+
+OpenSSL Project
+
+
+
