@@ -9,7 +9,7 @@ Open firefox browser of Zap which is on the Top -> Login into your application t
 Switch back to zap -> history -> login request is recorded 
 Now go to sites -> URL -> Post Login -> check request and response
 
-Click on URl -> include in context -> New context
+Click on sites -> URl -> include in context -> New context
 Now go to sites -> URL -> Post Login -> Flag as context -> Select above created context name(Form based)
 Logout -> history -> Select unique text in Logged out response -> Flag as context -> Authentication logged-out indicator
 Click on context -> users -> add user
