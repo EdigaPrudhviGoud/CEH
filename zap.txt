@@ -1,0 +1,2 @@
+Double click on Default context -> Include in context -> Add regex -> https://machint.com.*
+Right click on Default context -> Spider -> Starting point -> enter url -> start scan
