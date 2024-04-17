@@ -1,3 +1,5 @@
+Reference: https://www.youtube.com/watch?v=e-ry_Poct2o
+
 Double click on Default context -> Include in context -> Add regex -> https://machint.com.*
 Right click on Default context -> Spider -> Starting point -> enter url -> start scan
 Expand the sites tree and check the URL's -> Only Homepage and login page are accessible  
