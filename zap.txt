@@ -16,3 +16,4 @@ Click on context -> users -> add user
 B4 scanning -> select forced user mode enabled
 right Click on URL inside sites -> spider -> select context and user -> start scan
 Now zap will scan pages after authentication
+right Click on URL inside sites -> Active scan -> select context and user -> start scan
