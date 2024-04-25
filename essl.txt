@@ -1,0 +1,10 @@
+http://10.15.161.9:9090/Main.aspx
+essl essl
+
+Database settings:
+DB TYPE: MS SQL server
+DB Server: DESKTOP-VP5I9F9\SQLEXPRESS
+DB NAME: eTimeTracklite1
+Authentication type: SQL server authentication
+User: essl
+Password: essl
