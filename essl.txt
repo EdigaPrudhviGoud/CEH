@@ -1,5 +1,6 @@
 http://10.15.161.9:9090/Main.aspx
 essl essl
+admin Password@8
 
 Database settings:
 DB TYPE: MS SQL server
@@ -8,3 +9,71 @@ DB NAME: eTimeTracklite1
 Authentication type: SQL server authentication
 User: essl
 Password: essl
+
+
+SQLCMD -S DESKTOP-VP5I9F9 -U admin -P Machint@2023 -E
+
+USE master;
+CREATE LOGIN [devops] WITH PASSWORD = 'Machint@2023';
+USE HROne;
+CREATE USER [devops] FOR LOGIN [devops];
+
+
+USE master;
+CREATE LOGIN [admin] WITH PASSWORD = 'Machint@2023';
+USE HROne;
+CREATE USER [admin] FOR LOGIN [admin];
+
+
+USE HROne;
+GRANT CONTROL ON DATABASE::HROne TO admin;
+GO
+
+USE HROne;
+GRANT CREATE TABLE TO admin;
+GO
+
+USE HROne
+
+SELECT name as username, create_date, 
+       modify_date, type_desc as type
+FROM sys.database_principals
+WHERE type not in ('A', 'G', 'R', 'X')
+      and sid is not null
+      and name != 'guest'
+
+
+use HROne;
+create LOGIN admin with password='machint@2023';
+create user admin for login admin;
+
+CREATE TABLE HROne.[TRNPUNCHTIME](
+[PK_ID] [bigint] IDENTITY(1,1) NOT NULL,
+[FK_EMP_CODE] [varchar](20) NULL,
+[FK_STAFF_ID] [varchar](10) NULL,
+[TRNDATE] [datetime] NULL,
+[MACHINE_NO] [int] NULL,
+[IPADDRESS] [varchar](20) NULL,
+CONSTRAINT [pk_TRNPUNCHTIME_PK_ID] PRIMARY KEY CLUSTERED
+(
+[PK_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+TRNPUNCHTIME TABLE STRUCTURE
+
+CREATE TABLE [dbo].[TRNPUNCHTIME](
+[PK_ID] [bigint] IDENTITY(1,1) NOT NULL,
+[FK_EMP_CODE] [varchar](20) NULL,
+[FK_STAFF_ID] [varchar](10) NULL,
+[TRNDATE] [datetime] NULL,
+[MACHINE_NO] [int] NULL,
+[IPADDRESS] [varchar](20) NULL,
+CONSTRAINT [pk_TRNPUNCHTIME_PK_ID] PRIMARY KEY CLUSTERED
+(
+[PK_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
