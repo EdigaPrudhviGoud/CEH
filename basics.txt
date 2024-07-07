@@ -1,0 +1,25 @@
+Cybersecurity Standards and frameworks:
+
+Standards:
+
+    ISO/IEC 27001: A widely adopted international standard for information security management systems (ISMS). It provides a framework for implementing and managing security controls.
+
+    NIST Cybersecurity Framework (CSF): Developed by the National Institute of Standards and Technology (NIST), this framework provides a voluntary set of standards, guidelines, and best practices to manage cybersecurity-related risk.
+
+    PCI DSS (Payment Card Industry Data Security Standard): Specifically applies to organizations that handle credit card transactions. It outlines security requirements for protecting cardholder data.
+
+    HIPAA (Health Insurance Portability and Accountability Act): Sets standards for protecting sensitive patient health information (PHI) in the healthcare industry.
+
+    GDPR (General Data Protection Regulation): Although primarily focused on data protection and privacy, compliance with GDPR involves implementing robust cybersecurity measures to protect personal data.
+
+Frameworks:
+
+    NIST Cybersecurity Framework (CSF): Apart from being a standard, it also serves as a flexible framework for organizations to better understand and improve their cybersecurity posture.
+
+    COBIT (Control Objectives for Information and Related Technologies): Developed by ISACA, COBIT provides a framework for governance and management of enterprise IT, including cybersecurity.
+
+    CIS Controls (Center for Internet Security Controls): A concise, prioritized set of cybersecurity best practices developed by a global community of experts. They help organizations defend against pervasive cyber threats.
+
+    MITRE ATT&CK: A framework that categorizes and describes cyber adversary behavior, providing a knowledge base for understanding and improving an organization's defenses.
+
+    Zero Trust Security Model: While not a traditional framework, Zero Trust is a security model that advocates for strict identity verification and no implicit trust, even for insiders.
