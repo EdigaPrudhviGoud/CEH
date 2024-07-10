@@ -62,3 +62,6 @@ Network topology refers to the layout or structure of a computer network. It def
 The choice of network topology depends on factors such as the size of the network, the types of devices connected, reliability requirements, cost considerations, and the desired level of performance and scalability. Larger networks often use a combination of different topologies to achieve the best balance between cost, performance, and reliability.
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 
+Data -> Network Layer(IP packets) - srcIP,Dest IP,segment  
+    -> Data Link Layer(Frames) - Mac1,Mac2,IP Packet,FCS
+    -> Physical Layer(Cables)  
