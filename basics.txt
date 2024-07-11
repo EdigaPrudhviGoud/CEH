@@ -65,3 +65,22 @@ ________________________________________________________________________________
 Data -> Network Layer(IP packets) - srcIP,Dest IP,segment  
     -> Data Link Layer(Frames) - Mac1,Mac2,IP Packet,FCS
     -> Physical Layer(Cables)  
+___________________________________________________________________________________
+Switch:
+
+In networking, a switch is a device that operates at the Data Link layer (Layer 2) and sometimes the Network layer (Layer 3) of the OSI (Open Systems Interconnection) model. Its primary function is to forward data packets between devices within a local area network (LAN). Switches use the MAC addresses of devices to determine the path through which data should be forwarded, making decisions based on the destination address of each incoming packet.
+
+Key characteristics of switches include:
+
+    Address Learning: Switches build a table (known as a MAC address table or CAM table) that maps MAC addresses to the physical ports on the switch. This allows them to know which devices are connected to which ports.
+
+    Forwarding: When a switch receives a data packet, it checks the destination MAC address against its MAC address table to determine the outgoing port. The packet is then forwarded only to the port where the destination device is located, rather than being sent to all ports (as in the case of hubs).
+
+    Filtering: Switches prevent unnecessary traffic from being forwarded to all ports by filtering packets based on MAC addresses.
+
+    Collision Domain: Each port on a switch is its own collision domain, which means that devices connected to different ports can send and receive data simultaneously without collisions.
+
+    Broadcast Domain: By default, switches break up broadcast domains, so broadcasts are typically forwarded only to the ports where the broadcasted device resides.
+
+Switches are essential components in modern networking infrastructure, enabling efficient communication between devices within a LAN and contributing to overall network performance and security.
+____________________________________________________________________________________________________________________________________________________________________________________________________________
