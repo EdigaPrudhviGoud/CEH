@@ -86,7 +86,7 @@ Switches are essential components in modern networking infrastructure, enabling 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________
 
 NIC stands for Network Interface Card. It is a hardware component that allows computers, servers, or other devices to connect to a network. Here are some key points about NICs:
-
+It has a unique ID that is written on the chip.
     Function: A Network Interface Card enables a device to physically connect to a network. It provides the necessary hardware to send and receive data packets over the network medium, such as Ethernet cables or wireless signals.
 
     Types: NICs come in various types depending on the network technology they support. Common types include Ethernet NICs (for wired networks using Ethernet cables), Wi-Fi NICs (for wireless networks), and specialized NICs for other network technologies like Fibre Channel or Token Ring.
@@ -100,3 +100,4 @@ NIC stands for Network Interface Card. It is a hardware component that allows co
     Performance: The performance of a NIC can impact overall network performance, especially in terms of data transfer speeds, latency, and reliability. Higher-end NICs may support features like offloading certain network processing tasks to improve performance.
 
 NICs are fundamental to modern networking, enabling devices to access local area networks (LANs), wide area networks (WANs), and the internet. They facilitate communication between devices within a network and are essential for accessing network resources, sharing files, and communicating over the internet.
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
