@@ -66,6 +66,9 @@ Data -> Network Layer(IP packets) - srcIP,Dest IP,segment
     -> Data Link Layer(Frames) - Mac1,Mac2,IP Packet,FCS
     -> Physical Layer(Cables)  
 ___________________________________________________________________________________
+A switch is a networking device that connects devices within a local area network (LAN), allowing them to communicate with each other. It operates at the Data Link layer (Layer 2) of the OSI model and uses MAC addresses to forward data to the correct destination. Unlike hubs, which broadcast data to all connected devices, switches intelligently route data only to the specific device it is intended for, thereby improving network efficiency and security. Switches are fundamental in modern networks for creating segmented and efficient communication pathways between devices.
+
+----------------------------------------
 Switch:
 
 In networking, a switch is a device that operates at the Data Link layer (Layer 2) and sometimes the Network layer (Layer 3) of the OSI (Open Systems Interconnection) model. Its primary function is to forward data packets between devices within a local area network (LAN). Switches use the MAC addresses of devices to determine the path through which data should be forwarded, making decisions based on the destination address of each incoming packet.
@@ -101,3 +104,4 @@ It has a unique ID that is written on the chip.
 
 NICs are fundamental to modern networking, enabling devices to access local area networks (LANs), wide area networks (WANs), and the internet. They facilitate communication between devices within a network and are essential for accessing network resources, sharing files, and communicating over the internet.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+A router is a device in a computer network that forwards data packets between computer networks. It operates at the network layer (Layer 3) of the OSI model and uses routing protocols to determine the best path for forwarding packets. Essentially, a router connects different networks (like your home network to the internet) and directs traffic between them based on network addresses (IP addresses). This enables devices on different networks to communicate with each other. Routers are essential for enabling connectivity and efficient data transfer across the internet and local area networks (LANs).
