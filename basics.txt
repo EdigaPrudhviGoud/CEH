@@ -117,16 +117,16 @@ HTTP STATUS CODES:
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
 The OSI (Open Systems Interconnection) model is a conceptual framework used to understand and implement networking protocols. It divides networking functions into seven distinct layers, each with specific responsibilities. Here's a brief overview:
 
-    7.Physical Layer:
+    1.Physical Layer:
         Responsible for the actual transmission of raw data bits over a physical medium (like cables or radio waves).
         Deals with hardware components, signal types, and data rates.
 
-    6.Data Link Layer:
+    2.Data Link Layer:
         Ensures reliable communication between directly connected nodes.
         Handles error detection/correction and frames data for transmission.
         Examples include Ethernet and Wi-Fi.
 
-    5.Network Layer:
+    3.Network Layer:
         Manages routing of data packets between devices across different networks.
         Responsible for logical addressing (IP addresses).
         Examples include IP (Internet Protocol).
@@ -136,16 +136,16 @@ The OSI (Open Systems Interconnection) model is a conceptual framework used to u
         Ensures complete data transfer, error recovery, and flow control.
         Examples include TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
 
-    3.Session Layer:
+    5.Session Layer:
         Manages sessions or connections between applications.
         Controls the dialog between systems, managing and terminating connections as needed.
 
-    2.Presentation Layer:
+    6.Presentation Layer:
         Translates data between the application and the network format.
         Handles data encoding, encryption, and compression.
         Ensures that data is presented in a usable format for the application layer.
 
-    1.Application Layer:
+    7.Application Layer:
         Closest to the end user; it provides network services to applications.
         Facilitates user interactions with the network (e.g., web browsers, email clients).
         Examples include HTTP, FTP, and SMTP.
