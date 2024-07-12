@@ -150,3 +150,38 @@ The OSI (Open Systems Interconnection) model is a conceptual framework used to u
         Facilitates user interactions with the network (e.g., web browsers, email clients).
         Examples include HTTP, FTP, and SMTP.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+Understanding potential attacks at each OSI layer can help in securing networks and systems. Here’s a summary of common attacks associated with each layer:
+
+    Physical Layer:
+        Wiretapping: Unauthorized interception of network communications.
+        Physical Damage: Tampering with cables or hardware.
+        Eavesdropping: Listening to network communications using antennas or other devices.
+
+    Data Link Layer:
+        MAC Spoofing: Changing the source MAC address to impersonate another device.
+        ARP Spoofing: Sending falsified ARP messages to link an attacker’s MAC address with an IP address, leading to man-in-the-middle attacks.
+        VLAN Hopping: Exploiting vulnerabilities in VLAN configurations to gain unauthorized access to other VLANs.
+
+    Network Layer:
+        IP Spoofing: Sending packets from a false source address to bypass security measures.
+        DDoS (Distributed Denial of Service): Overloading a network or service with traffic to disrupt availability.
+        Routing Attacks: Manipulating routing protocols (like BGP) to redirect traffic.
+
+    Transport Layer:
+        TCP SYN Flood: Sending a barrage of SYN requests to overwhelm a server, leading to denial of service.
+        TCP Session Hijacking: Taking over an active session by predicting or intercepting session tokens.
+        UDP Flood: Overloading a target with UDP packets, leading to service disruption.
+
+    Session Layer:
+        Session Fixation: Exploiting a session ID by tricking users into using a predetermined ID.
+        Session Hijacking: Taking control of a user's active session through various means (e.g., XSS).
+
+    Presentation Layer:
+        Data Injection: Injecting malicious data that exploits vulnerabilities in data handling or encoding.
+        Format String Attacks: Exploiting improper handling of format strings in applications.
+
+    Application Layer:
+        SQL Injection: Manipulating SQL queries through unsanitized input.
+        Cross-Site Scripting (XSS): Injecting malicious scripts into webpages viewed by others.
+        Phishing: Deceiving users into providing sensitive information through fake websites.
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
