@@ -185,3 +185,16 @@ Understanding potential attacks at each OSI layer can help in securing networks 
         Cross-Site Scripting (XSS): Injecting malicious scripts into webpages viewed by others.
         Phishing: Deceiving users into providing sensitive information through fake websites.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+TCP / IP - Transmission Control Protocol / Internet Protocol
+
+Application
+Presentation
+Session      -  Application 
+
+Transport    -  Transport
+
+Network      -  Internet
+
+Data Link Layer   
+Physical     -  Network
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
