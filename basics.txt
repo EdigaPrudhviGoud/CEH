@@ -108,3 +108,10 @@ A router is a device in a computer network that forwards data packets between co
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
 A repeater(operates at Physical layer) is a basic network device that receives and regenerates signals to extend the distance over which data can travel within a network. It helps overcome signal degradation caused by long cables or other obstacles, ensuring data reaches its destination reliably.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+HTTP STATUS CODES:
+1XX - Informational
+2XX - Success
+3XX - Redirection
+4XX - Client error
+5XX - Server error
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
