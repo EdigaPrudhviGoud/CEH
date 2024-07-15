@@ -198,3 +198,7 @@ Network      -  Internet
 Data Link Layer   
 Physical     -  Network
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+The kernel is the core part of an operating system that manages system resources and allows communication between hardware and software.
+
+The shell is a user interface that allows users to interact with the operating system, typically through command-line inputs or graphical interfaces.
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
