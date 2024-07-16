@@ -1,0 +1,5 @@
+Install hoaxshell
+https://github.com/t3l3machus/hoaxshell
+It will generate Reverse shell payload
+Copy that payload command and run on the victims machine by opening powershell
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
