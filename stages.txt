@@ -1,3 +1,37 @@
 Reconnaissance:
 1.whois
 2.https://www.virustotal.com
+________________________________________________________________________________________________________________________________________________________________________________________________________________
+Scanning:
+Ping scan -> Used to scan live hosts on network
+nmap -sn IP/CIDR -oN nmap.txt
+nmap -sn IP > nmap.txt
+
+Displays OS, Computer-Name, Domain, WorkGroup and Ports:
+nmap --script smb-os-discovery.nse IP 
+
+check scripts -> ls /usr/share/nmap/scripts | grep smb
+
+nmap -sC -sV -sS -p- -A -O -v -T4 IP/CIDR
+-sC = scripts
+-sV = version enum
+-sS = Stealth scan
+-A = Aggressive scan
+-p- = All open ports
+-v = verbose
+
+Ping sweep -> -sP
+ARP scan -> -PR
+
+TCP Connect scan : Live hosts along with ports open 
+nmap -sT <IP>
+
+UDP Scan : -sU
+
+-PU UDP ping scan
+-PE ICMP ECHO ping scan
+-f  Splits IP into fragment packets
+
+FIN scan : -sF
+Attacker ------FIN packet-----> |(Firewall)| ----------------> Target
+Terminate TCP connection b/w source & dest.
