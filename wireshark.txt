@@ -18,9 +18,11 @@ frame contains "login"
 smtp and frame contains "MAIL FROM"
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 Install mono-complete:
-apt install mono-complete
-The mono-complete package is part of the Mono project, which is an open-source implementation of Microsoft's .NET Framework. The purpose of mono-complete is to provide a full set of Mono libraries and tools needed for developing and running .NET applications on different platforms, including Linux and macOS.
+apt install mono-complete  #Used to run .exe and .net applications
+Mono-complete: The mono-complete package is part of the Mono project, which is an open-source implementation of Microsoft's .NET Framework. The purpose of mono-complete is to provide a full set of Mono libraries and tools needed for developing and running .NET applications on different platforms, including Linux and macOS.
 
+*****LOIC Download from SourceForge
+mono LOIC.exe
 
 Detect DOS/DDOS with Wireshark:
 Explanation:
