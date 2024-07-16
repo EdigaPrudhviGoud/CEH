@@ -202,3 +202,23 @@ The kernel is the core part of an operating system that manages system resources
 
 The shell is a user interface that allows users to interact with the operating system, typically through command-line inputs or graphical interfaces.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+types of malware:
+
+    Virus: A program that attaches itself to files and spreads when those files are shared.
+
+    Worm: A standalone program that replicates itself to spread across networks without needing a host file.
+
+    Trojan Horse: Malicious software disguised as legitimate software, tricking users into installing it.
+
+    Ransomware: Software that encrypts files and demands payment to unlock them.
+
+    Spyware: Software that secretly collects user information and sends it to third parties.
+
+    Adware: Software that automatically displays or downloads advertisements, often unwanted.
+
+    Rootkit: Software designed to gain unauthorized access to a computer and hide its presence.
+
+    Keylogger: A program that records keystrokes to capture sensitive information like passwords.
+
+    Botnet: A network of infected computers controlled by a hacker, often used for coordinated attacks.
+_______________________________________________________________________________________________________________________________________________________________________________________________________________
