@@ -1,2 +1,3 @@
 Reconnaissance:
-https://www.virustotal.com
+1.whois
+2.https://www.virustotal.com
