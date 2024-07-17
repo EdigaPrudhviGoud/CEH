@@ -3,7 +3,7 @@ Reconnaissance:
 2.https://www.virustotal.com
 ________________________________________________________________________________________________________________________________________________________________________________________________________________
 Scanning:
-Ping scan -> Used to scan live hosts on network
+Ping scan(-sP) -> Used to scan live hosts on network
 nmap -sn IP/CIDR -oN nmap.txt
 nmap -sn IP > nmap.txt
 
