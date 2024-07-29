@@ -222,3 +222,4 @@ types of malware:
 
     Botnet: A network of infected computers controlled by a hacker, often used for coordinated attacks.
 _______________________________________________________________________________________________________________________________________________________________________________________________________________
+CIDR (Classless Inter-Domain Routing), which is a method used in IP addressing and routing to improve the efficiency of IP address allocation. It's a way of assigning IP addresses and routing IP packets without relying on the traditional class-based system (A, B, C, etc.).
